@@ -20,6 +20,8 @@ app.get('/api', (req, res) => {
         "current day": days[day],
         "utc time": date.toUTCString(),
         "track": track,
+        "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
+        "github_repo_url": "https://github.com/MuthoniMN/hng_backend_one",
         "status_code": 200
     }
     res.json(obj)
